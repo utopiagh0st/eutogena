@@ -12,12 +12,12 @@
     --color-tertiary:#72FF4A;
     --color-quaternary:#8B5CF6;
     --color-accent:#B6FF70;
-    --color-background:#100818;
-    --color-surface:#180F26;
-    --color-surface-raised:#211632;
-    --color-border:#45345C;
+    --color-background:#000000;
+    --color-surface:#000000;
+    --color-surface-raised:#0b080f;
+    --color-border:#6f00ff;
     --color-text:#EDE7F7;
-    --color-muted:#A99BB8;
+    --color-muted:#60388b;
     --color-focus:var(--color-primary);
     --bg:var(--color-background);
     --panel:var(--color-surface);
@@ -54,7 +54,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 .top-navigation { display:flex; align-items:center; gap:5px; }
 .top-nav-button {
     min-height:36px; display:flex; align-items:center; gap:8px; padding:0 10px;
-    border:1px solid transparent; border-radius:7px; background:transparent;
+    border:1px solid transparent; border-radius:0px; background:transparent;
     color:#9ba5b3; font-size:11px; white-space:nowrap;
 }
 .top-nav-button:hover { color:var(--color-text); background:#141922; }
@@ -70,7 +70,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 .brand-mark {
     width:36px;
     height:36px;
-    border-radius:11px;
+    border-radius:5px;
     display:grid;
     place-items:center;
     color:#111;
@@ -112,7 +112,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
     color:#9ba5b3;
     background:transparent;
     border:1px solid transparent;
-    border-radius:8px;
+    border-radius:0px;
     text-align:left;
     font-size:12px
 }
@@ -151,14 +151,14 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
     padding:12px;
     background:#111720;
     border:1px solid #27303b;
-    border-radius:10px
+    border-radius:0px
 }
 .oracle-icon {
     width:32px;
     height:32px;
     display:grid;
     place-items:center;
-    border-radius:8px;
+    border-radius:0px;
     background:#CC79A71a;
     color:#CC79A7
 }
@@ -240,7 +240,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
     display:grid;
     place-items:center;
     border:1px solid #28313d;
-    border-radius:8px;
+    border-radius:50%;
     background:#11161d;
     color:#9ba6b5
 }
@@ -304,7 +304,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
     gap:8px;
     padding:0 10px;
     border:1px solid #29313c;
-    border-radius:7px;
+    border-radius:0px;
     background:#0c1015;
     color:#788493
 }
@@ -327,7 +327,6 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
     justify-content:center;
     gap:7px;
     padding:0 12px;
-    border-radius:7px;
     font-size:11px;
     font-weight:650;
     white-space:nowrap
@@ -387,9 +386,9 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 .react-flow__node-person {
     min-width:132px;
     padding:13px 14px;
-    border:1px solid #303946;
-    border-radius:12px;
-    background:#111720;
+    border:1px solid var(--color-primary);
+    border-radius:0px;
+    background:#000000;
     box-shadow:0 9px 30px #0005;
     color:#e9edf4;
     text-align:center
